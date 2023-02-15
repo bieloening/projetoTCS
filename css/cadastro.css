@@ -4,7 +4,7 @@ body{
     overflow: hidden;
 }
 
-.area-cadastro{
+.area_cadastro{
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -12,17 +12,28 @@ body{
 }
 
 .cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 6px 6px 4px 1px rgba(0, 0, 0, 0.493);
     background-color: #FFFFFF;
     width: 355px;
     height: 320px;
-
+    padding: 35px;
 }
 
 .cadastro form{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;;
 }
 
 .cadastro input{
-    margin-top: 10px;
+    margin-top: 15px;
 }
+
+.cadastro .btnEnv{
+    font-weight: bold;
+}
+

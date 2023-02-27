@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="import" href="enviarEmail.py">
     <title>Cadastro</title>
 </head>
 <body>
@@ -14,14 +15,14 @@
             <h1>Crie sua Conta</h1>
         </div>
 
-        <form method="POST">
+        <form action="" method="POST">
             <input type="text" name="nome" placeholder="Nome" autofocus>
             <input type="text" name="cpf" placeholder="CPF">
             <input type="email" name="email" placeholder="E-mail">
             <input type="text" name="endereco" placeholder="Endereço">
-            <input class="btnEnv" type="submit" name="cadastrar" value="Cadastrar">
+            <input onclick="enviar_email" class="btnEnv" type="submit" name="cadastrar" value="Cadastrar" >
         </form>
-        <p>Já possui uma conta?<a href="#">Logar</a></p>
+        <p>Já possui uma conta?<a href="login.html">Logar</a></p>
       </div>
     </section>
 </body>
